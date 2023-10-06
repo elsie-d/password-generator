@@ -16,9 +16,11 @@ var passLength = prompt("Please specify desired password length \n *Must be a nu
   
 if (passLength < 8 || passLength > 128) {
 alert("Please enter a number within the speified range")
+return "Password not gerenated, try again."
 }
 if (!passLength) {
 alert("Length required")
+return "Password not gerenated, try again."
 }
 /* define if not a number
 if (passLength ) {
