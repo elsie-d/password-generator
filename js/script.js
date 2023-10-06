@@ -15,18 +15,15 @@ var passLength = prompt("Please specify desired password length \n *Must be a nu
 //console.log(passLength)
   
 if (passLength < 8 || passLength > 128) {
-alert("Please enter a number within the speified range")
-return "Password not gerenated, try again."
-}
-if (!passLength) {
-alert("Length required")
-return "Password not gerenated, try again."
-}
-/* define if not a number
-if (passLength ) {
-    alert("Input nueric values only")
-}*/
-;
+    alert("Please enter a number within the speified range")
+    return "Password not gerenated, try again."
+    }
+    
+    else if (NaN == passLength){
+    alert("Password length must be a numeric value")
+    return "Password not gerenated, try again."
+        
+    };
 
     
 //Lower Case Prompt
